@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AppTheme.Dark">
+        <attr name="dark_theme1" format="color" />
+        <attr name="dark_theme2" format="color" />
+        <attr name="dark_theme3" format="color" />
+        <attr name="dark_theme4" format="color" />
+    </declare-styleable>
+</resources>
