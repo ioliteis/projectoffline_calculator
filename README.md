@@ -1,4 +1,4 @@
 # Project Offline Calculator
-# # Introduction
+## Introduction
 An easy calculator app which has no Internet permission. 
 
