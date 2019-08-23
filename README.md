@@ -1,2 +1,4 @@
-# projectoffline_calculator
-An easy calculator which has no Internet permission.
+# Project Offline Calculator
+# # Introduction
+An easy calculator app which has no Internet permission. 
+
