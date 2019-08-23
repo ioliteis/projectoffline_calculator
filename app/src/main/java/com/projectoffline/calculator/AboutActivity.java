@@ -50,7 +50,7 @@ public class AboutActivity extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Uri uri1 = Uri.parse("https://www.startpage.com/");
+                Uri uri1 = Uri.parse("https://github.com/ioliteis/projectoffline_calculator");
                 Intent a = new Intent(Intent.ACTION_VIEW, uri1);
                 startActivity(a);
             }
