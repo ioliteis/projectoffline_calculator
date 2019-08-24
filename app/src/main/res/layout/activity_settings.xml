@@ -24,7 +24,7 @@
 
     <fragment
         android:id="@+id/fragment"
-        android:name="com.projectoffline.calculator.SettingsFragment"
+        android:name="jp.projectoffline.calculator.SettingsFragment"
         android:layout_width="match_parent"
         android:layout_height="674dp"/>
 

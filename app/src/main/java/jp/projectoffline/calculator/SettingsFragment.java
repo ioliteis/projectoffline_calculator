@@ -1,4 +1,4 @@
-package com.projectoffline.calculator;
+package jp.projectoffline.calculator;
 
 import android.os.Bundle;
 import android.preference.PreferenceFragment;

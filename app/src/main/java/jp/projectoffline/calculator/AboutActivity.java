@@ -1,4 +1,4 @@
-package com.projectoffline.calculator;
+package jp.projectoffline.calculator;
 
 import android.content.ClipData;
 import android.content.ClipboardManager;

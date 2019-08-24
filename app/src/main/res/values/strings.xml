@@ -19,7 +19,7 @@
     <string name="button14">+</string>
     <string name="button15">C</string>
     <string name="button16">0</string>
-    <string name="version">Version 0.1</string>
+    <string name="version">Version 0.1.2</string>
     <string name="dark_theme">Dark Theme</string>
     <string name="summary">Relaunching app is required.</string>
     <string name="preference_title1">Theme</string>

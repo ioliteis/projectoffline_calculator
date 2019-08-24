@@ -1,4 +1,4 @@
-package com.projectoffline.calculator;
+package jp.projectoffline.calculator;
 
 import android.content.Intent;
 import android.os.Bundle;
