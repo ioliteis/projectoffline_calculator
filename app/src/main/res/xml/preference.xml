@@ -6,7 +6,7 @@
     </PreferenceCategory>
     <CheckBoxPreference
         android:defaultValue="false"
-        android:key="darktheme"
+        android:key="dark_theme"
         android:summary="@string/summary"
         android:title="@string/dark_theme"/>
 </PreferenceScreen>

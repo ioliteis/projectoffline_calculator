@@ -21,7 +21,7 @@ public class AboutActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //Dark theme
-        if (PreferenceManager.getDefaultSharedPreferences(this).getBoolean("darktheme", true)){
+        if (PreferenceManager.getDefaultSharedPreferences(this).getBoolean("dark_theme", true)){
             setTheme(R.style.AppTheme_Dark);
         }
         setContentView(R.layout.activity_about);
@@ -68,7 +68,7 @@ public class AboutActivity extends AppCompatActivity {
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Uri uri3 = Uri.parse("https://www.qwant.com/");
+                Uri uri3 = Uri.parse("https://ioliteis.github.io/projectoffline");
                 Intent c = new Intent(Intent.ACTION_VIEW, uri3);
                 startActivity(c);
             }

@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //Dark theme
-        if (PreferenceManager.getDefaultSharedPreferences(this).getBoolean("darktheme", true)){
+        if (PreferenceManager.getDefaultSharedPreferences(this).getBoolean("dark_theme", true)){
             setTheme(R.style.AppTheme_Dark);
         }
 
