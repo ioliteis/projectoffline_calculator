@@ -1,4 +1,4 @@
-package com.projectoffline.calculator;
+package jp.projectoffline.calculator;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.projectoffline.calculator", appContext.getPackageName());
+        assertEquals("jp.projectoffline.calculator", appContext.getPackageName());
     }
 }
