@@ -19,12 +19,12 @@
     <string name="button14">+</string>
     <string name="button15">C</string>
     <string name="button16">0</string>
-    <string name="version">Version 0.1.3</string>
+    <string name="version">Version 0.1</string>
     <string name="dark_theme">ダークテーマ</string>
     <string name="summary">アプリの再起動が必要です。</string>
     <string name="preference_title1">テーマ</string>
     <string name="about_source">ソースコード</string>
-    <string name="about_version">バージョン 0.1.3</string>
+    <string name="about_version">バージョン 0.1</string>
     <string name="about_po">Project Offlineについて</string>
     <string name="about_about">Project Offline Calculator</string>
     <string name="about_icon">Icon</string>

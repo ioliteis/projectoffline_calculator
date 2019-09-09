@@ -40,6 +40,7 @@ public class AboutActivity extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //クリップボードにバージョンをコピー
                 ClipboardManager clipboardManager = (ClipboardManager)getSystemService(CLIPBOARD_SERVICE);
                 clipboardManager.setPrimaryClip(ClipData.newPlainText("", string1));
 
@@ -59,7 +60,7 @@ public class AboutActivity extends AppCompatActivity {
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Uri uri2 = Uri.parse("https://duckduckgo.com/");
+                Uri uri2 = Uri.parse("https://ioliteis.github.io/projectoffline/2019/08/26/Privacy-Policy/");
                 Intent b = new Intent(Intent.ACTION_VIEW, uri2);
                 startActivity(b);
             }

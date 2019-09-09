@@ -276,23 +276,29 @@ public class MainActivity extends AppCompatActivity {
         button15.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                array1[i] = Integer.valueOf(string1);
-                //演算部分
-                for (int j = 0; j < i; j++){
-                    switch (string2.charAt(j)){
-                        case '+' : array1[j+1] += array1[j];
-                                    break;
-                        case '-' : array1[j+1] = array1[j] - array1[j+1];
-                                    break;
-                        case '*' : array1[j+1] *= array1[j];
-                                    break;
-                        case '/' : array1[j+1] = array1[j] / array1[j+1];
-                                    break;
+                if (enzan) {
+                    array1[i] = Integer.valueOf(string1);
+                    //演算部分
+                    for (int j = 0; j < i; j++) {
+                        switch (string2.charAt(j)) {
+                            case '+':
+                                array1[j + 1] += array1[j];
+                                break;
+                            case '-':
+                                array1[j + 1] = array1[j] - array1[j + 1];
+                                break;
+                            case '*':
+                                array1[j + 1] *= array1[j];
+                                break;
+                            case '/':
+                                array1[j + 1] = array1[j] / array1[j + 1];
+                                break;
+                        }
                     }
-                }
 
-                string1 = String.valueOf(array1[i]);
-                textView.setText(string1);
+                    string1 = String.valueOf(array1[i]);
+                    textView.setText(string1);
+                }
                 zero = false;
                 enzan = false;
             }
