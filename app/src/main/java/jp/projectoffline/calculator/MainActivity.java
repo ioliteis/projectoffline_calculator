@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     String string1 = ""; //表示する数字
     String string2 = "";//記号
-    int[] array1 = new int[100];//数字
+    double[] array1 = new double[100];//数字
 
     int i = 0; //演算回数+1 or 要素の数
     int k = 0; //演算途中で減った配列の要素数
@@ -226,7 +226,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (enzan){
                     string2 += "/";
-                    array1[i] = Integer.valueOf(string1);
+                    array1[i] = Double.valueOf(string1);
                     i++;
                     zero = false;
                     enzan = false;
@@ -239,7 +239,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (enzan){
                     string2 += "*";
-                    array1[i] = Integer.valueOf(string1);
+                    array1[i] = Double.valueOf(string1);
                     i++;
                     zero = false;
                     enzan = false;
@@ -252,7 +252,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (enzan) {
                     string2 += "-";
-                    array1[i] = Integer.valueOf(string1);
+                    array1[i] = Double.valueOf(string1);
                     i++;
                     zero = false;
                     enzan = false;
@@ -265,7 +265,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (enzan){
                     string2 += "+";
-                    array1[i] = Integer.valueOf(string1);
+                    array1[i] = Double.valueOf(string1);
                     i++;
                     zero = false;
                     enzan = false;
@@ -277,7 +277,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (enzan) {
-                    array1[i] = Integer.valueOf(string1);
+                    array1[i] = Double.valueOf(string1);
                     //演算部分
                     for (int j = 0; j < i; j++) {
                         switch (string2.charAt(j)) {
