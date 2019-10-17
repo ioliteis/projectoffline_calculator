@@ -19,12 +19,12 @@
     <string name="button15">C</string>
     <string name="button16">0</string>
     <string name="button17">=</string>
-    <string name="version">Version 0.2</string>
+    <string name="version">Version 0.3</string>
     <string name="dark_theme">Dark Theme</string>
     <string name="summary">Relaunching app is required.</string>
     <string name="preference_title1">Theme</string>
     <string name="about_source">Source Code</string>
-    <string name="about_version">Version 0.2</string>
+    <string name="about_version">Version 0.3</string>
     <string name="about_po">Project Offline</string>
     <string name="about_about">Project Offline Calculator</string>
     <string name="about_icon">Icon</string>
