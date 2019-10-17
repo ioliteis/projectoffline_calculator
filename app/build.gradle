@@ -6,8 +6,8 @@ android {
         applicationId "jp.projectoffline.calculator"
         minSdkVersion 22
         targetSdkVersion 28
-        versionCode 200
-        versionName "0.2"
+        versionCode 300
+        versionName "0.3"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
