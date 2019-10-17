@@ -13,8 +13,13 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    boolean zero = false; //最大の位を0にしないため
-    boolean enzan = false; //数字が入力されていないときに記号を押させないため
+    boolean onlyDigit = true; //数字のみ受け取る
+    boolean firstInput = true; //最初の入力
+    boolean endCalculate = false; //=のあとC以外押させないようにする
+    boolean startCalculate = false; //=の実行
+    boolean zeroInput = true; //0が入力可能かどうか
+    boolean dotInput = true; //小数点が入力可能か
+    boolean operate = false; //数字が入力されていないときに記号を押させないため
 
 
     String string1 = ""; //表示する数字
@@ -55,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
         Button button14 = findViewById(R.id.button14);
         Button button15 = findViewById(R.id.button15);
         Button button16 = findViewById(R.id.button16);
+        Button button17 = findViewById(R.id.button17);
 
         //初期化
         for(int j = 0; j < 100; j++){
@@ -64,155 +70,227 @@ public class MainActivity extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (!zero){
-                    string1 = "1";
-                    textView.setText(string1);
-                }else{
-                    string1 = string1 + "1";
-                    textView.setText(string1);
-                }
+                if (!endCalculate) {
+                    if (zeroInput) {
+                        if (firstInput){
+                            string1 = "1";
+                            textView.setText(string1);
+                            firstInput = false;
+                            zeroInput = true;
+                        }else{
+                            string1 = string1 + "1";
+                            textView.setText(string1);
+                            zeroInput = true;
+                        }
 
-                zero = true;
-                enzan = true;
+
+                        operate = true;
+                    }
+                }
             }
         });
 
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (!zero){
-                    string1 = "2";
-                    textView.setText(string1);
-                }else{
-                    string1 = string1 + "2";
-                    textView.setText(string1);
-                }
+                if (!endCalculate) {
+                    if (zeroInput) {
+                        if (firstInput){
+                            string1 = "2";
+                            textView.setText(string1);
+                            firstInput = false;
+                            zeroInput = true;
+                        }else{
+                            string1 = string1 + "2";
+                            textView.setText(string1);
+                            zeroInput = true;
+                        }
 
-                zero = true;
-                enzan = true;
+
+                        operate = true;
+                    }
+                }
             }
         });
 
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (!zero){
-                    string1 = "3";
-                    textView.setText(string1);
-                }else{
-                    string1 = string1 + "3";
-                    textView.setText(string1);
-                }
+                if (!endCalculate) {
+                    if (zeroInput) {
+                        if (firstInput){
+                            string1 = "3";
+                            textView.setText(string1);
+                            firstInput = false;
+                            zeroInput = true;
+                        }else{
+                            string1 = string1 + "3";
+                            textView.setText(string1);
+                            zeroInput = true;
+                        }
 
-                zero = true;
-                enzan = true;
+
+                        operate = true;
+                    }
+                }
             }
         });
 
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (!zero){
-                    string1 = "4";
-                    textView.setText(string1);
-                }else{
-                    string1 = string1 + "4";
-                    textView.setText(string1);
-                }
+                if (!endCalculate) {
+                    if (zeroInput) {
+                        if (firstInput){
+                            string1 = "4";
+                            textView.setText(string1);
+                            firstInput = false;
+                            zeroInput = true;
+                        }else{
+                            string1 = string1 + "4";
+                            textView.setText(string1);
+                            zeroInput = true;
+                        }
 
-                zero = true;
-                enzan = true;
+
+                        operate = true;
+                    }
+                }
             }
         });
 
         button5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (!zero){
-                    string1 = "5";
-                    textView.setText(string1);
-                }else{
-                    string1 = string1 + "5";
-                    textView.setText(string1);
-                }
+                if (!endCalculate) {
+                    if (zeroInput) {
+                        if (firstInput){
+                            string1 = "5";
+                            textView.setText(string1);
+                            firstInput = false;
+                            zeroInput = true;
+                        }else{
+                            string1 = string1 + "5";
+                            textView.setText(string1);
+                            zeroInput = true;
+                        }
 
-                zero = true;
-                enzan = true;
+
+                        operate = true;
+                    }
+                }
             }
         });
 
         button6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (!zero){
-                    string1 = "6";
-                    textView.setText(string1);
-                }else{
-                    string1 = string1 + "6";
-                    textView.setText(string1);
-                }
+                if (!endCalculate) {
+                    if (zeroInput) {
+                        if (firstInput){
+                            string1 = "6";
+                            textView.setText(string1);
+                            firstInput = false;
+                            zeroInput = true;
+                        }else{
+                            string1 = string1 + "6";
+                            textView.setText(string1);
+                            zeroInput = true;
+                        }
 
-                zero = true;
-                enzan = true;
+
+                        operate = true;
+                    }
+                }
             }
         });
 
         button7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (!zero){
-                    string1 = "7";
-                    textView.setText(string1);
-                }else{
-                    string1 = string1 + "7";
-                    textView.setText(string1);
-                }
+                if (!endCalculate) {
+                    if (zeroInput) {
+                        if (firstInput){
+                            string1 = "7";
+                            textView.setText(string1);
+                            firstInput = false;
+                            zeroInput = true;
+                        }else{
+                            string1 = string1 + "7";
+                            textView.setText(string1);
+                            zeroInput = true;
+                        }
 
-                zero = true;
-                enzan = true;
+
+                        operate = true;
+                    }
+                }
             }
         });
 
         button8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (!zero){
-                    string1 = "8";
-                    textView.setText(string1);
-                }else{
-                    string1 = string1 + "8";
-                    textView.setText(string1);
-                }
+                if (!endCalculate) {
+                    if (zeroInput) {
+                        if (firstInput){
+                            string1 = "8";
+                            textView.setText(string1);
+                            firstInput = false;
+                            zeroInput = true;
+                        }else{
+                            string1 = string1 + "8";
+                            textView.setText(string1);
+                            zeroInput = true;
+                        }
 
-                zero = true;
-                enzan = true;
+
+                        operate = true;
+                    }
+                }
             }
         });
 
         button9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (!zero){
-                    string1 = "9";
-                    textView.setText(string1);
-                }else{
-                    string1 = string1 + "9";
-                    textView.setText(string1);
-                }
+                if (!endCalculate) {
+                    if (zeroInput) {
+                        if (firstInput){
+                            string1 = "9";
+                            textView.setText(string1);
+                            firstInput = false;
+                            zeroInput = true;
+                        }else{
+                            string1 = string1 + "9";
+                            textView.setText(string1);
+                            zeroInput = true;
+                        }
 
-                zero = true;
-                enzan = true;
+
+                        operate = true;
+                    }
+                }
             }
         });
 
         button10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 string1 = "";
                 string2 = "";
-                textView.setText("0");
-                zero = false;
-                enzan = false;
+
+                endCalculate = false;
+                startCalculate = false;
+                firstInput = true;
+                zeroInput = true;
+                dotInput = true;
+
+                textView.setText("");
+
+                operate = false;
+
                 i = 0;
                 k = 0;
                 for(int j = 0; j < 100; j++){
@@ -224,12 +302,18 @@ public class MainActivity extends AppCompatActivity {
         button11.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (enzan){
-                    string2 += "/";
-                    array1[i] = Double.valueOf(string1);
-                    i++;
-                    zero = false;
-                    enzan = false;
+                if (!endCalculate) {
+                    if (operate){
+                        string2 += "/";
+                        array1[i] = Double.valueOf(string1);
+                        i++;
+
+                        operate = false;
+                        firstInput = true;
+                        zeroInput = true;
+                        dotInput = true;
+                        startCalculate = true;
+                    }
                 }
             }
         });
@@ -237,12 +321,18 @@ public class MainActivity extends AppCompatActivity {
         button12.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (enzan){
-                    string2 += "*";
-                    array1[i] = Double.valueOf(string1);
-                    i++;
-                    zero = false;
-                    enzan = false;
+                if (!endCalculate) {
+                    if (operate){
+                        string2 += "*";
+                        array1[i] = Double.valueOf(string1);
+                        i++;
+
+                        operate = false;
+                        firstInput = true;
+                        zeroInput = true;
+                        dotInput = true;
+                        startCalculate = true;
+                    }
                 }
             }
         });
@@ -250,12 +340,18 @@ public class MainActivity extends AppCompatActivity {
         button13.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (enzan) {
-                    string2 += "-";
-                    array1[i] = Double.valueOf(string1);
-                    i++;
-                    zero = false;
-                    enzan = false;
+                if (!endCalculate) {
+                    if (operate) {
+                        string2 += "-";
+                        array1[i] = Double.valueOf(string1);
+                        i++;
+
+                        operate = false;
+                        firstInput = true;
+                        zeroInput = true;
+                        dotInput = true;
+                        startCalculate = true;
+                    }
                 }
             }
         });
@@ -263,12 +359,18 @@ public class MainActivity extends AppCompatActivity {
         button14.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (enzan){
-                    string2 += "+";
-                    array1[i] = Double.valueOf(string1);
-                    i++;
-                    zero = false;
-                    enzan = false;
+                if (!endCalculate) {
+                    if (operate){
+                        string2 += "+";
+                        array1[i] = Double.valueOf(string1);
+                        i++;
+
+                        operate = false;
+                        firstInput = true;
+                        zeroInput = true;
+                        dotInput = true;
+                        startCalculate = true;
+                    }
                 }
             }
         });
@@ -276,7 +378,45 @@ public class MainActivity extends AppCompatActivity {
         button15.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (enzan) {
+                if (!endCalculate) {
+                    if (dotInput) {
+                        if (!firstInput) {
+                            string1 = string1 + ".";
+                            textView.setText(string1);
+                            zeroInput = true;
+                            dotInput = false;
+                            operate = false;
+                        }
+                    }
+                }
+            }
+        });
+
+
+        button16.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (!endCalculate) {
+                    if (zeroInput) {
+                        if (firstInput) {
+                            string1 = "0";
+                            textView.setText(string1);
+                            firstInput = false;
+                            zeroInput = false;
+                        }else{
+                            string1 = string1 + "0";
+                            textView.setText(string1);
+                        }
+                        operate = true;
+                    }
+                }
+            }
+        });
+
+        button17.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (startCalculate) {
                     array1[i] = Double.valueOf(string1);
                     //演算部分
                     for (int j = 0; j < i; j++) {
@@ -296,28 +436,13 @@ public class MainActivity extends AppCompatActivity {
                         }
                     }
 
+                    endCalculate = true;//C以外のボタンを押させない
+
                     string1 = String.valueOf(array1[i]);
                     textView.setText(string1);
                 }
-                zero = false;
-                enzan = false;
-            }
-        });
 
-
-        button16.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (zero){
-                    if (string1.equals("")){
-                        string1 = "0";
-                        textView.setText(string1);
-                    }else{
-                        string1 = string1 + "0";
-                        textView.setText(string1);
-                    }
-                    enzan = true;
-                }
+                startCalculate = false;
             }
         });
     }

@@ -2,7 +2,6 @@
     <string name="app_name">電卓</string>
     <string name="action_settings">設定</string>
     <string name="action_about">このアプリについて</string>
-    <string name="answer">0</string>
     <string name="button1">1</string>
     <string name="button2">2</string>
     <string name="button3">3</string>
@@ -12,19 +11,20 @@
     <string name="button7">7</string>
     <string name="button8">8</string>
     <string name="button9">9</string>
-    <string name="button10">=</string>
+    <string name="button10">.</string>
     <string name="button11">÷</string>
     <string name="button12">×</string>
     <string name="button13">-</string>
     <string name="button14">+</string>
     <string name="button15">C</string>
     <string name="button16">0</string>
-    <string name="version">Version 0.2</string>
+    <string name="button17">=</string>
+    <string name="version">Version 0.3</string>
     <string name="dark_theme">ダークテーマ</string>
     <string name="summary">アプリの再起動が必要です。</string>
     <string name="preference_title1">テーマ</string>
     <string name="about_source">ソースコード</string>
-    <string name="about_version">バージョン 0.2</string>
+    <string name="about_version">バージョン 0.3</string>
     <string name="about_po">Project Offlineについて</string>
     <string name="about_about">Project Offline Calculator</string>
     <string name="about_icon">Icon</string>
