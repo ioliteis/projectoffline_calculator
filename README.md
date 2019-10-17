@@ -1,4 +1,5 @@
 # Project Offline Calculator
+<img src="https://raw.githubusercontent.com/ioliteis/projectoffline_calculator/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"></img>
 ## Introduction
 A simple calculator app which has no Internet permission. 
 ## Screenshots
