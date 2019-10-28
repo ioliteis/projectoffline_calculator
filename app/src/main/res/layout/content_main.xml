@@ -26,12 +26,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <include
+
+    <!--<include
         android:id="@+id/include"
         layout="@layout/numbers_row1"
         android:layout_width="103dp"
         android:layout_height="440dp"
-        android:layout_marginStart="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -40,27 +40,37 @@
         layout="@layout/numbers_row2"
         android:layout_width="103dp"
         android:layout_height="440dp"
-        android:layout_marginStart="0dp"
+        android:layout_marginStart="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/include" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <include
         android:id="@+id/include3"
         layout="@layout/numbers_row3"
         android:layout_width="103dp"
         android:layout_height="440dp"
-        android:layout_marginStart="0dp"
+        android:layout_marginStart="204dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/include2" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <include
         android:id="@+id/include4"
         layout="@layout/numbers_row4"
         android:layout_width="103dp"
         android:layout_height="440dp"
-        android:layout_marginEnd="0dp"
+        android:layout_marginStart="308dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />-->
+
+    <include
+        layout="@layout/input"
+        android:layout_width="match_parent"
+        android:layout_height="440dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/include3" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 </android.support.constraint.ConstraintLayout>
