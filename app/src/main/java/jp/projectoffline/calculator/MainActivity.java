@@ -13,7 +13,6 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    boolean onlyDigit = true; //数字のみ受け取る
     boolean firstInput = true; //最初の入力
     boolean endCalculate = false; //=のあとC以外押させないようにする
     boolean startCalculate = false; //=の実行
@@ -277,24 +276,16 @@ public class MainActivity extends AppCompatActivity {
         button10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                string1 = "";
-                string2 = "";
-
-                endCalculate = false;
-                startCalculate = false;
-                firstInput = true;
-                zeroInput = true;
-                dotInput = true;
-
-                textView.setText("");
-
-                operate = false;
-
-                i = 0;
-                k = 0;
-                for(int j = 0; j < 100; j++){
-                    array1[j] = 0;
+                if (!endCalculate) {
+                    if (dotInput) {
+                        if (!firstInput) {
+                            string1 = string1 + ".";
+                            textView.setText(string1);
+                            zeroInput = true;
+                            dotInput = false;
+                            operate = false;
+                        }
+                    }
                 }
             }
         });
@@ -378,16 +369,23 @@ public class MainActivity extends AppCompatActivity {
         button15.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (!endCalculate) {
-                    if (dotInput) {
-                        if (!firstInput) {
-                            string1 = string1 + ".";
-                            textView.setText(string1);
-                            zeroInput = true;
-                            dotInput = false;
-                            operate = false;
-                        }
-                    }
+                string1 = "";
+                string2 = "";
+
+                endCalculate = false;
+                startCalculate = false;
+                firstInput = true;
+                zeroInput = true;
+                dotInput = true;
+
+                textView.setText("");
+
+                operate = false;
+
+                i = 0;
+                k = 0;
+                for(int j = 0; j < 100; j++){
+                    array1[j] = 0;
                 }
             }
         });

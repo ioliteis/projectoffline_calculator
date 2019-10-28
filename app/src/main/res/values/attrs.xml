@@ -5,5 +5,6 @@
         <attr name="dark_theme2" format="color" />
         <attr name="dark_theme3" format="color" />
         <attr name="dark_theme4" format="color" />
+        <attr name="dark_theme5" format="color" />
     </declare-styleable>
 </resources>

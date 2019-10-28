@@ -15,6 +15,7 @@
         <item name="dark_theme2">@color/textColor</item>
         <item name="dark_theme3">@color/textColor</item>
         <item name="dark_theme4">@color/white</item>
+        <item name="dark_theme5">@color/grey</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
@@ -28,6 +29,7 @@
         <item name="dark_theme2">@color/white</item>
         <item name="dark_theme3">@color/textColor</item>
         <item name="dark_theme4">@color/white</item>
+        <item name="dark_theme5">@color/grey</item>
     </style>
 
     <style name="MyTheme" parent="AppTheme.Dark">
