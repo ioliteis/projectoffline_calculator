@@ -26,42 +26,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-    <!--<include
-        android:id="@+id/include"
-        layout="@layout/numbers_row1"
-        android:layout_width="103dp"
-        android:layout_height="440dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <include
-        android:id="@+id/include2"
-        layout="@layout/numbers_row2"
-        android:layout_width="103dp"
-        android:layout_height="440dp"
-        android:layout_marginStart="100dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <include
-        android:id="@+id/include3"
-        layout="@layout/numbers_row3"
-        android:layout_width="103dp"
-        android:layout_height="440dp"
-        android:layout_marginStart="204dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <include
-        android:id="@+id/include4"
-        layout="@layout/numbers_row4"
-        android:layout_width="103dp"
-        android:layout_height="440dp"
-        android:layout_marginStart="308dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />-->
-
     <include
         layout="@layout/input"
         android:layout_width="match_parent"

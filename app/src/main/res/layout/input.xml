@@ -2,34 +2,33 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:baselineAligned="false">
 
     <include
         android:id="@+id/include"
         layout="@layout/numbers_row1"
         android:layout_width="103dp"
-        android:layout_height="440dp"
+        android:layout_height="match_parent"
         android:layout_weight="1"/>
 
     <include
         android:id="@+id/include2"
         layout="@layout/numbers_row2"
         android:layout_width="103dp"
-        android:layout_height="440dp"
+        android:layout_height="match_parent"
         android:layout_weight="1"/>
 
     <include
         android:id="@+id/include3"
         layout="@layout/numbers_row3"
         android:layout_width="103dp"
-        android:layout_height="440dp"
+        android:layout_height="match_parent"
         android:layout_weight="1"/>
 
     <include
         android:id="@+id/include4"
         layout="@layout/numbers_row4"
         android:layout_width="103dp"
-        android:layout_height="440dp"
-        android:layout_weight="1"/>
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
 </LinearLayout>
