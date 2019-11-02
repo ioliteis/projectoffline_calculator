@@ -59,7 +59,7 @@
     <Button
         android:id="@+id/button17"
         android:layout_width="match_parent"
-        android:layout_height="88dp"
+        android:layout_height="90dp"
         android:background="?attr/dark_theme5"
         android:text="@string/button17"
         android:textColor="?attr/dark_theme4"
