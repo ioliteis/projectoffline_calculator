@@ -2,6 +2,7 @@
     <string name="app_name">電卓</string>
     <string name="action_settings">設定</string>
     <string name="action_about">このアプリについて</string>
+
     <string name="button1">1</string>
     <string name="button2">2</string>
     <string name="button3">3</string>
@@ -19,15 +20,22 @@
     <string name="button15">C</string>
     <string name="button16">0</string>
     <string name="button17">=</string>
-    <string name="version">Version 0.4.2</string>
-    <string name="dark_theme">ダークテーマ</string>
-    <string name="summary">アプリの再起動が必要です。</string>
-    <string name="preference_title1">テーマ</string>
+
     <string name="about_source">ソースコード</string>
-    <string name="about_version">バージョン 0.4.2</string>
+    <string name="about_version">バージョン</string>
     <string name="about_po">Project Offlineについて</string>
     <string name="about_about">Project Offline Calculator</string>
-    <string name="about_icon">Icon</string>
     <string name="about_privacy">プライバシーポリシー</string>
     <string name="about_copy">コピーしました。</string>
+    <string name="about_licenses">オープンソースライセンス</string>
+    <string name="about_mastodon">マストドン アカウント</string>
+    <string name="about_website">Project Offline のウェブサイト</string>
+    <string name="about_privacy_comment">プライバシーポリシーをお読みください。</string>
+    <string name="about_contact">活動状況はこちら。</string>
+
+    <string name="version">0.5</string>
+
+    <string name="preference_theme">テーマ</string>
+    <string name="preference_theme_content">ダークテーマ</string>
+    <string name="preference_theme_summary">アプリの再起動が必要です。</string>
 </resources>
