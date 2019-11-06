@@ -1,4 +1,6 @@
 # Changelog
+## Version 0.5.2 (11/06/2019)
+- Bug fixed.
 ## Version 0.5.1 (11/06/2019)
 - Licenses update.
 ## Version 0.5 (11/06/2019)
