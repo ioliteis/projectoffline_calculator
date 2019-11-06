@@ -9,22 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".LicensesActivity"
+            android:theme="@style/AppTheme.MaterialAboutActivity"></activity>
         <activity
             android:name=".AboutActivity"
             android:label="@string/action_about"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:screenOrientation="portrait">
-        </activity>
+            android:theme="@style/AppTheme.MaterialAboutActivity"></activity>
         <activity
             android:name=".SettingsActivity"
             android:label="@string/action_settings"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:screenOrientation="portrait"/>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
