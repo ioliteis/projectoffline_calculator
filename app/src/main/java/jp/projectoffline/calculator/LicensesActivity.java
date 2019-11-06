@@ -43,7 +43,7 @@ public class LicensesActivity extends MaterialAboutActivity {
                         .icon(CommunityMaterial.Icon.cmd_book)
                         .color(ContextCompat.getColor(c, colorIcon))
                         .sizeDp(18),
-                "Android Iconics", "2016", "Mike Penz",
+                "Android-Iconics", "2019", "Mike Penz",
                 OpenSourceLicense.APACHE_2);
 
         return  new MaterialAboutList(cardLicense1, cardLicense2);
