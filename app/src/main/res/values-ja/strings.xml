@@ -33,7 +33,7 @@
     <string name="about_privacy_comment">プライバシーポリシーをお読みください。</string>
     <string name="about_contact">活動状況はこちら。</string>
 
-    <string name="version">0.5.2</string>
+    <string name="version">0.5.3</string>
 
     <string name="preference_theme">テーマ</string>
     <string name="preference_theme_content">ダークテーマ</string>

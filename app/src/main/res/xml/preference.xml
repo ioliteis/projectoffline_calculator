@@ -6,7 +6,8 @@
         <SwitchPreferenceCompat
             app:key="dark_theme"
             app:title="@string/preference_theme_content"
-            app:summary="@string/preference_theme_summary"/>
+            app:summary="@string/preference_theme_summary"
+            app:defaultValue="true"/>
 
     </PreferenceCategory>
 
