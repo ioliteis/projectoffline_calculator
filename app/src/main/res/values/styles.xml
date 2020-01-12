@@ -16,6 +16,7 @@
         <item name="dark_theme3">@color/textColor</item>
         <item name="dark_theme4">@color/white</item>
         <item name="dark_theme5">@color/grey</item>
+        <item name="dark_theme6">@color/white</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
@@ -23,6 +24,9 @@
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
     <style name="AppTheme.Dark">
+        <item name="colorPrimary">@color/trueBlack</item>
+        <item name="colorPrimaryDark">@color/trueBlack</item>
+        <item name="colorAccent">@color/colorAccent</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="dark_theme1">@color/black</item>
@@ -30,20 +34,25 @@
         <item name="dark_theme3">@color/textColor</item>
         <item name="dark_theme4">@color/white</item>
         <item name="dark_theme5">@color/grey</item>
-    </style>
-
-    <style name="MyTheme" parent="AppTheme.Dark">
-        <item name="android:preferenceStyle">@style/Preference</item>
-    </style>
-
-    <style name="Preference">
-        <item name="android:layout">@xml/preference</item>
+        <item name="dark_theme6">@color/black</item>
     </style>
 
     <style name="AppTheme.MaterialAboutActivity" parent="Theme.Mal.Light.DarkActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.MaterialAboutActivity.Dark" parent="Theme.Mal.Dark">
+        <item name="colorPrimary">@color/trueBlack</item>
+        <item name="colorPrimaryDark">@color/trueBlack</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.Pref" parent="AppTheme.Dark">
+        <item name="colorAccent">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
     </style>
 
 </resources>
