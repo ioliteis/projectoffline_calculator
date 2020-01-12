@@ -16,19 +16,20 @@ import com.mikepenz.community_material_typeface_library.CommunityMaterial;
 import com.mikepenz.iconics.IconicsDrawable;
 
 public class LicensesActivity extends MaterialAboutActivity {
+    int  colorIcon = R.color.colorAccent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
         //Dark theme
         if (PreferenceManager.getDefaultSharedPreferences(this).getBoolean("dark_theme", true)){
-            setTheme(R.style.Theme_Mal_Dark);
+            setTheme(R.style.AppTheme_MaterialAboutActivity_Dark);
+            colorIcon = R.color.white;
         }
+        super.onCreate(savedInstanceState);
     }
 
     @Override
     @NonNull
     protected MaterialAboutList getMaterialAboutList(@NonNull final Context c) {
-        int  colorIcon = R.color.colorAccent;
 
         MaterialAboutCard cardLicense1 = ConvenienceBuilder.createLicenseCard(c,
                 new IconicsDrawable(c)

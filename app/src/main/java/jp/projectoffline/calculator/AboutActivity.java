@@ -26,11 +26,12 @@ public class AboutActivity extends MaterialAboutActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
         //Dark theme
         if (PreferenceManager.getDefaultSharedPreferences(this).getBoolean("dark_theme", true)){
-            setTheme(R.style.Theme_Mal_Dark);
+            setTheme(R.style.AppTheme_MaterialAboutActivity_Dark);
+            colorIcon = R.color.white;
         }
+        super.onCreate(savedInstanceState);
     }
 
     @Override
