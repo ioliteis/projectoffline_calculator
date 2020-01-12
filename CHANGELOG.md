@@ -1,4 +1,6 @@
 # Changelog
+## Version 0.6 (01/12/2020)
+- New dark theme.
 ## Version 0.5.3 (11/19/2019)
 - Minor bug fixed.
 ## Version 0.5.2 (11/06/2019)
