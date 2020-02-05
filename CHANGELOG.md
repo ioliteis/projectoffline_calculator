@@ -1,4 +1,6 @@
 # Changelog
+## Version 0.6.1 (02/05/2020)
+- Now you don't have to restart app after you change the theme.
 ## Version 0.6 (01/12/2020)
 - New dark theme.
 ## Version 0.5.3 (11/19/2019)
