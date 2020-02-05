@@ -30,14 +30,16 @@ public class MainActivity extends AppCompatActivity {
     int i = 0; //演算回数+1 or 要素の数
     int k = 0; //演算途中で減った配列の要素数
 
+    private boolean theme;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
         //Dark theme
         if (PreferenceManager.getDefaultSharedPreferences(this).getBoolean("dark_theme", true)){
             setTheme(R.style.AppTheme_Dark);
+            theme = true;
         }
-
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -445,6 +447,17 @@ public class MainActivity extends AppCompatActivity {
                 startCalculate = false;
             }
         });
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        if ((PreferenceManager.getDefaultSharedPreferences(this).getBoolean("dark_theme", true) && !theme) || (!PreferenceManager.getDefaultSharedPreferences(this).getBoolean("dark_theme", true) && theme)){
+            overridePendingTransition(0, 0);
+            finish();
+            overridePendingTransition(0, 0);
+            startActivity(getIntent());
+        }
     }
 
     @Override
