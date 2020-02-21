@@ -3,20 +3,18 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/colorPrimary</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-        <item name="dark_theme1">@color/white</item>
-        <item name="dark_theme2">@color/textColor</item>
-        <item name="dark_theme3">@color/textColor</item>
-        <item name="dark_theme4">@color/white</item>
-        <item name="dark_theme5">@color/grey</item>
-        <item name="dark_theme6">@color/white</item>
+        <item name="dark_theme3">@color/white</item>
+        <item name="dark_theme4">@color/black</item>
+        <item name="dark_theme5">@color/colorPrimary</item>
+        <item name="android:windowLightStatusBar">true</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
@@ -24,33 +22,58 @@
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
     <style name="AppTheme.Dark">
-        <item name="colorPrimary">@color/trueBlack</item>
-        <item name="colorPrimaryDark">@color/trueBlack</item>
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/black</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-        <item name="dark_theme1">@color/black</item>
-        <item name="dark_theme2">@color/white</item>
-        <item name="dark_theme3">@color/textColor</item>
+        <item name="dark_theme3">@color/grey</item>
         <item name="dark_theme4">@color/white</item>
-        <item name="dark_theme5">@color/grey</item>
-        <item name="dark_theme6">@color/black</item>
+        <item name="dark_theme5">@color/black</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <item name="android:windowBackground">@color/black</item>
+        <item name="android:colorForeground">@color/black</item>
+        <item name="android:colorForegroundInverse">@color/black</item>
+        <item name="android:colorBackground">@color/black</item>
+        <item name="android:colorBackgroundCacheHint">@color/black</item>
+        <item name="colorBackgroundFloating">@color/black</item>
+
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorPrimaryInverse">@color/white</item>
+        <item name="android:textColorPrimaryDisableOnly">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="android:textColorSecondaryInverse">@color/white</item>
+        <item name="android:textColorTertiary">@color/white</item>
+        <item name="android:textColorTertiaryInverse">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textColorHintInverse">@color/white</item>
+        <item name="android:textColorHighlight">@color/white</item>
+
+        <item name="colorControlNormal">?android:attr/textColorSecondary</item>
+        <item name="colorControlHighlight">@color/white</item>
+        <item name="colorButtonNormal">@color/white</item>
+        <item name="colorSwitchThumbNormal">@color/white</item>
     </style>
 
-    <style name="AppTheme.MaterialAboutActivity" parent="Theme.Mal.Light.DarkActionBar">
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+    <style name="AppTheme.MaterialAboutActivity" parent="Theme.Mal.Light">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:windowLightStatusBar">true</item>
     </style>
 
     <style name="AppTheme.MaterialAboutActivity.Dark" parent="Theme.Mal.Dark">
-        <item name="colorPrimary">@color/trueBlack</item>
-        <item name="colorPrimaryDark">@color/trueBlack</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="mal_card_background">@color/black</item>
+        <item name="android:colorBackground">@color/black</item>
     </style>
 
     <style name="AppTheme.Pref" parent="AppTheme.Dark">
-        <item name="colorAccent">@color/white</item>
+        <item name="colorAccent">@color/colorPrimary</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:textColorSecondary">@color/white</item>
     </style>
