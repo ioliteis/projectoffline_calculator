@@ -4,10 +4,10 @@ android {
     compileSdkVersion 29
     defaultConfig {
         applicationId "jp.projectoffline.calculator"
-        minSdkVersion 22
+        minSdkVersion 23
         targetSdkVersion 29
-        versionCode 601
-        versionName "0.6.1"
+        versionCode 602
+        versionName "0.6.2"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {

@@ -16,13 +16,12 @@ import com.mikepenz.community_material_typeface_library.CommunityMaterial;
 import com.mikepenz.iconics.IconicsDrawable;
 
 public class LicensesActivity extends MaterialAboutActivity {
-    int  colorIcon = R.color.colorAccent;
+    int  colorIcon = R.color.colorPrimary;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         //Dark theme
         if (PreferenceManager.getDefaultSharedPreferences(this).getBoolean("dark_theme", true)){
             setTheme(R.style.AppTheme_MaterialAboutActivity_Dark);
-            colorIcon = R.color.white;
         }
         super.onCreate(savedInstanceState);
     }

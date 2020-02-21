@@ -18,7 +18,7 @@
         android:layout_marginBottom="551dp"
         android:maxLength="16"
         android:textAlignment="textEnd"
-        android:textColor="?attr/dark_theme2"
+        android:textColor="?attr/dark_theme4"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
